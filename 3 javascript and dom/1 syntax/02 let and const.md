@@ -52,3 +52,13 @@ If a variable is declared using let or const inside a block of code (denoted by 
     getClothing(false);
 
 Now upon execution it will work like we initially expected and give `Reference error`
+
+### Use cases
+
+The big question is when should you use let and const? The general rule of thumb is as follows:
+
+- use let when you plan to reassign new values to a variable, and
+- use const when you don’t plan on reassigning new values to a variable.
+
+Since const is the strictest way to declare a variable, we suggest that you always declare variables with const because it'll make your code easier to reason about since you know the identifiers won't change throughout the lifetime of your program. If you find that you need to update a variable or change it, then go back and switch it from const to let.
+
