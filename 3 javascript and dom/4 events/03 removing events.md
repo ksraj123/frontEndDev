@@ -76,3 +76,10 @@ This is how it should be used as
 
     // immediately removes the click listener that should run the `myEventListeningFunction` function
     document.removeEventListener('click', myEventListeningFunction);
+
+Now have a look at the below code:
+
+    myForm.addEventListener('submit', function respondToSubmit(){...});
+    myForm.removeEventListener('submit', function respondToSubmit(){...});
+
+Here the listener will not be removed and the element will still have an event listener
